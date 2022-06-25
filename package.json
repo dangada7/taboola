@@ -1,0 +1,13 @@
+{
+  "name": "Taboola",
+  "version": "1.0.0",
+  "type":"module",
+  "dependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}

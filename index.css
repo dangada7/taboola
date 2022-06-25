@@ -1,0 +1,105 @@
+
+/* === header === */
+
+.g_header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    vertical-align: center;
+    border-bottom: 2px solid black;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.g_header .g_taboolaIcon{
+    width: 50px;
+}
+
+/* === taboolaAdsList === */
+
+#taboolaAdsList{
+    text-align: center;
+}
+
+#taboolaAdsList .g_adsItem{
+    display: inline-block;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    margin: 4px;
+    border-radius: 5px;
+    vertical-align: top;
+}
+
+#taboolaAdsList .g_adsItem:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+#taboolaAdsList .g_adsItem a {
+    text-decoration: none;
+    color: black;
+    text-align: initial;
+}
+
+#taboolaAdsList .g_adsItem a .g_adsImage{
+    width: 100%;
+    border-radius: 5px 5px 0 0 ;
+    object-fit: cover;
+}
+
+#taboolaAdsList .g_adsItem a .g_adsText{
+    padding: 8px;
+}
+
+#taboolaAdsList .g_adsItem a .g_adsText .g_bottomAds{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    vertical-align: center;
+    margin-top: 8px;
+    color: gray;
+
+}
+
+#taboolaAdsList .g_adsItem a .g_adsText .g_bottomAds .g_adsBranding{
+    font-size: 14px;
+}
+
+#taboolaAdsList .g_adsItem a .g_adsText .g_bottomAds .g_adsDate{
+    font-size: 14px;
+}
+
+#taboolaAdsList .g_loader {
+    max-width: 200px;
+    width: 100%;
+}
+
+
+/* sizes */
+@media only screen
+and (min-width : 415px){
+    .g_adsItem{
+        width: 200px;
+    }
+
+    #taboolaAdsList .g_adsItem a .g_adsImage{
+        height: 100px;
+    }
+}
+
+@media only screen
+and (min-width : 769px){
+    .g_adsItem{
+        width: 300px;
+    }
+    #taboolaAdsList .g_adsItem a .g_adsImage{
+        height: 150px;
+    }
+}
+
+@media only screen
+and (min-width : 992px){
+    #taboolaAdsList .g_adsItem{
+        width: 400px;
+    }
+
+    #taboolaAdsList .g_adsItem a .g_adsImage{
+        height: 200px;
+    }
+}
