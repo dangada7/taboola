@@ -66,12 +66,14 @@
 }
 
 #taboolaAdsList .g_loader {
-    max-width: 200px;
-    width: 100%;
+    padding: 32px;
+    margin: 16px;
+    box-sizing: border-box;
 }
 
 
-/* sizes */
+
+/* media sizes  */
 @media only screen
 and (min-width : 415px){
     .g_adsItem{
@@ -80,6 +82,11 @@ and (min-width : 415px){
 
     #taboolaAdsList .g_adsItem a .g_adsImage{
         height: 100px;
+    }
+
+    .g_loader{
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -91,6 +98,11 @@ and (min-width : 769px){
     #taboolaAdsList .g_adsItem a .g_adsImage{
         height: 150px;
     }
+
+    .g_loader{
+        width: 300px;
+        height: 250px;
+    }
 }
 
 @media only screen
@@ -101,5 +113,10 @@ and (min-width : 992px){
 
     #taboolaAdsList .g_adsItem a .g_adsImage{
         height: 200px;
+    }
+
+    .g_loader{
+        width: 400px;
+        height: 350px;
     }
 }

@@ -1,8 +1,10 @@
 import assert from "assert";
-import {addZero, formatDate, TaboolaAds} from "../index.js";
+import {addZero, formatDate} from "../js/helpers.js";
+import {TaboolaAds} from "../js/classes.js";
 
-// addZero
-describe("AddZero", () => {
+// helpers
+describe("helpers", () => {
+
     it("addZero 1", () => {
 
         const input = "1"
@@ -11,7 +13,6 @@ describe("AddZero", () => {
 
         assert.equal(expectOutput, result);
     });
-
     it("addZero 2", () => {
 
         const input = "7"
@@ -20,7 +21,6 @@ describe("AddZero", () => {
 
         assert.equal(expectOutput, result);
     });
-
     it("addZero 3", () => {
 
         const input = "11"
@@ -29,10 +29,7 @@ describe("AddZero", () => {
 
         assert.equal(expectOutput, result);
     });
-});
 
-// Dates
-describe("Dates", () => {
     it("Date 1", () => {
 
         const input = new Date("01/01/2022")
@@ -41,7 +38,6 @@ describe("Dates", () => {
 
         assert.equal(expectOutput, result);
     });
-
     it("Date 2", () => {
 
         const input = new Date("01/05/2022")
@@ -50,7 +46,6 @@ describe("Dates", () => {
 
         assert.equal(expectOutput, result);
     });
-
     it("Date 3", () => {
 
         const input = new Date ("12/17/2022")
@@ -61,10 +56,10 @@ describe("Dates", () => {
     });
 });
 
-// Class
-describe("Class", () => {
+// classes
+describe("classes", () => {
 
-    it("Class 1 - categories", () => {
+    it("TaboolaAds.categories 1", () => {
 
         const result = new TaboolaAds({
             categories : null
@@ -73,8 +68,7 @@ describe("Class", () => {
 
         assert.equal(expectOutput.join(","), result.categories.join(","));
     });
-
-    it("Class 2 - categories", () => {
+    it("TaboolaAds.categories 2", () => {
 
         const result = new TaboolaAds({
             categories : ["Test"]
@@ -84,7 +78,7 @@ describe("Class", () => {
         assert.equal(expectOutput.join(","), result.categories.join(","));
     });
 
-    it("Class 3 - createdDate", () => {
+    it("TaboolaAds.createdDate 1", () => {
 
         const date = "01/01/2022"
         const result = new TaboolaAds({
